@@ -2,16 +2,6 @@
 
 This repository contains the implementation and experimental results for a study on Federated Learning (FL) security, focusing on poisoning attacks and robust aggregation defenses.
 
-## 📌 Table of Contents
-- [Project Overview](#-project-overview)
-- [Key Experiments](#-key-experiments)
-- [Graph Explanations](#-graph-explanations)
-- [Results Analysis](#-results-analysis)
-- [Repository Structure](#-repository-structure)
-- [How to Reproduce](#-how-to-reproduce)
-- [Key Findings](#-key-findings)
-
-## 🔍 Project Overview
 This practical work (TP3) investigates:
 - **Poisoning Attacks** in Federated Learning:
   - Data poisoning (label flipping)
@@ -23,7 +13,7 @@ This practical work (TP3) investigates:
 
 We evaluate these under varying attack strengths (0%, 25%, 50% malicious clients) using the FLOWER framework.
 
-## 🧪 Key Experiments
+## Key Experiments
 | Experiment File | Description |
 |----------------|------------|
 | `fedavg_attackdata_mal0` | Baseline FedAvg (no attacks) |
@@ -32,7 +22,7 @@ We evaluate these under varying attack strengths (0%, 25%, 50% malicious clients
 | `krum_attackdata_mal25` | Krum defense at 25% attack rate |
 | `median_attackmodel_mal50` | FedMedian defense at 50% attack rate |
 
-## 📊 Graph Explanations
+## Graph Explanations
 ### 1. FedAvg Under Attack
 ![FedAvg Performance](results_fedavg_alpha10.0_attackdata_mal0_plot.png)
 - **Left (Loss)**: Training loss progression
@@ -54,7 +44,7 @@ We evaluate these under varying attack strengths (0%, 25%, 50% malicious clients
 - **Behavior**: Gradual degradation at 50% attack
 - **Limitation**: Fails when attackers >50%
 
-## 📈 Results Analysis
+## Results Analysis
 ### Comparative Performance
 | Defense Method | 0% Attack | 25% Attack | 50% Attack |
 |---------------|----------|-----------|-----------|
@@ -63,8 +53,6 @@ We evaluate these under varying attack strengths (0%, 25%, 50% malicious clients
 | Krum          | 83.7%    | 81.5%     | 62.4%     |
 
 **Key Insights**:
-1. FedAvg collapses completely under attacks
-2. Krum shows strongest resilience
-3. FedMedian provides moderate protection
+FedAvg collapses completely under attacks, Krum shows strongest resilience, FedMedian provides moderate protection
 
-## 🗂 Repository Structure
+
