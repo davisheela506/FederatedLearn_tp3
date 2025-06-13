@@ -1,0 +1,10 @@
+SEED = 42
+NUM_ROUNDS = 25
+NUM_CLIENTS = 10
+EPOCHS = 3
+ALPHA_DIRICHLET = 1.0
+BATCH_SIZE = 64
+LEARNING_RATE = 0.001  #it was 0.01, but changed for python run_simulation.py --algorithm median --alpha 10 --attack_type model --malicious_ratio 0.5
+DATA_DIR = "client_data"
+FEDPROX_MU = 0.1
+USE_BN = False
